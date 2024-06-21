@@ -31,6 +31,7 @@ cd Arch-Essentials &&
 rm -f LICENSE &&
 rm -f README.md &&
 cp ae.sh ~/Desktop/ &&
+cp cc.sh ~/Desktop/ &&
 cd .. &&
 yes | rm -r Arch-Essentials &&
 chmod +x ae.sh && 
