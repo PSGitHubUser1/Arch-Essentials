@@ -22,7 +22,7 @@ bash ae.sh
 bash cc.sh
 ```
  
-<h4 align="left">  Download the 'ae.sh' manually, or copy & paste this command in your terminal: </h4>
+<h4 align="left">  Copy & paste this command in your terminal: </h4>
 
 ```sh
 cd ~/Desktop &&
