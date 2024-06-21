@@ -2,7 +2,7 @@
  Arch Essentials
 </h1>
 
-## This script aims to install terminal programs which should be WITH the distro itself.
+### This script aims to install terminal programs which should be WITH the distro itself.
 ### And is really handy & instant.
  
 
