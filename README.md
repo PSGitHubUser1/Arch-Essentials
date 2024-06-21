@@ -12,7 +12,7 @@
 
  - Arch Linux (pacman)
  - Git 
-<h2 align="left">  Run the file </h2>
+<h2 align="left">  # Run the file </h2>
 
 
  
@@ -28,7 +28,7 @@ cd ..
 yes | rm -r Arch-Essentials
 chmod +x ae.sh && ./ae.sh # Copy and paste in terminal
 ```
-<h2 align="left">  This file installs: </h2>
+<h2 align="left">  # This file installs: </h2>
 
  - Flatpak
  - Ranger
