@@ -1,33 +1,32 @@
 #!/bin/sh
 
 
-
-clear
-echo 
-echo  Info:  Press Ctrl+C to exit '(Provides exit signal to script)'
-echo 
-echo  "Script will start in (10)."
-sleep 1
-echo  "Script will start in (9).."
-sleep 1
-echo  "Script will start in (8)..."
-sleep 1
-echo  "Script will start in (7)...."
-sleep 1
-echo  "Script will start in (6)....."
-sleep 1
-echo  "Script will start in (5)."
-sleep 1
-echo  "Info: EXIT NOW IF YOU WANT!!! YOU CAN'T EXIT AFTER  (1)"
-sleep 5
-echo  "Script will start in (4).."
-sleep 1
-echo  "Script will start in (3)..."
-sleep 1
-echo  "Script will start in (2).... "
-sleep 1
-echo  "Script will start in (1)....."
-sleep 1
+#clear
+#echo 
+#echo  Info:  Press Ctrl+C to exit '(Provides exit signal to script)'
+#echo 
+#echo  "Script will start in (10)."
+#sleep 1
+#echo  "Script will start in (9).."
+#sleep 1
+#echo  "Script will start in (8)..."
+#sleep 1
+#echo  "Script will start in (7)...."
+#sleep 1
+#echo  "Script will start in (6)....."
+#sleep 1
+#echo  "Script will start in (5)."
+#sleep 1
+#echo  "Info: EXIT NOW IF YOU WANT!!! YOU CAN'T EXIT AFTER  (1)"
+#sleep 5
+#echo  "Script will start in (4).."
+#sleep 1
+#echo  "Script will start in (3)..."
+#sleep 1
+#echo  "Script will start in (2).... "
+#sleep 1
+#echo  "Script will start in (1)....."
+#sleep 1
 
 
  
@@ -69,67 +68,76 @@ echo
 echo ==================================================================
 yes | sudo pacman -Sy htop
 echo ==================================================================
-#echo 
-#echo Installing Grub Customizer 
-#echo 
-#echo Adding repo. [Grub Customizer]
-#echo 
-#sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
-#echo ==================================================================
-#echo 
-#sudo apt install grub-customizer
-#echo ==================================================================
 echo 
 echo  Installing Yay [AUR manager]
-echo
+echo 
 echo ==================================================================
 cd ~
 sudo git clone https://aur.archlinux.org/yay.git
 cd yay
-sudo makepkg -si
+makepkg -si
 echo ==================================================================
-echo
+echo 
+echo  Installing Dust 
+echo 
+echo ==================================================================
+yes | sudo yay -Sy dust 
+echo ==================================================================
+echo 
+echo  Installing Grub Customizer
+echo 
+echo ==================================================================
+yes | sudo yay -Sy grub-customizer
+echo ==================================================================
+echo 
+echo  Installing OS-Prober, Update-Grub '(For Dual Boot)'
+echo 
+echo ==================================================================
+yes | sudo pacman -Sy os-prober
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+yes | yay -Sy update-grub
+#update-grub
+echo ==================================================================
+echo 
 echo  Installing Ramfetch
-echo
+echo 
+echo ==================================================================
 yes | sudo yay -Sy ramfetch
 echo ==================================================================
 echo 
-#echo Updating packages...
-#sudo apt update
-#echo ===================================================================
 echo  Installing Flatpak
-echo
+echo 
+echo ==================================================================
 yes | sudo pacman -Sy flatpak
-echo 
-#flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-echo 
-#echo Installing Software [Its like MS Store but for Debian/Linux]
-#echo 
-#sudo apt install gnome-software-plugin-flatpak
 echo ==================================================================
 echo 
 echo Installing Nano 
 echo 
+echo ==================================================================
 yes | sudo pacman -Sy nano
 echo ==================================================================
 echo 
 echo Installing Python 
 echo 
+echo ==================================================================
 yes | sudo pacman -Sy python python3
 echo ==================================================================
 echo
-echo Installing Java [JDK 17]
-echo
+echo Installing Java '(JDK 17)'
+echo 
+echo ==================================================================
 yes | sudo pacman -Sy jdk17-openjdk
 echo ===============================================================
 echo 
 echo Installing Git
 echo 
+echo ==================================================================
 yes | sudo pacman -Sy git
 echo ==================================================================
 echo 
 echo Installing Curl and Wget
 echo 
+echo ==================================================================
 yes | sudo pacman -Sy curl wget
 #echo ==================================================================
 #echo
@@ -141,7 +149,6 @@ yes | sudo pacman -Sy curl wget
 #cd cpufetch
 #make
 #./cpufetch
-echo 
 echo ==================================================================
 #echo 
 #echo Donwloading eDex-UI [x64 Bit, AppImage]
@@ -155,11 +162,5 @@ echo ==================================================================
 #sudo apt install appimagelauncher
 #echo ==================================================================
 echo 
-echo ==================================================================
-echo
-echo
-neofetch
-echo 
-ramfetch
 echo 
 #reboot
