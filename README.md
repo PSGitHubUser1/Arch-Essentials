@@ -7,7 +7,7 @@
  
 
 <h2 align="left">
-  Requirements 
+  # Requirements 
 </h2>
 
  - Arch Linux (pacman)
