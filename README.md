@@ -16,7 +16,7 @@
 
 
  
-Download the "de.sh", copy & paste this command in your terminal:
+Download the "ae.sh", copy & paste this command in your terminal:
 ```sh
 cd ~/Desktop
 git clone https://github.com/PSGitHubUser1/Arch-Essentials
@@ -30,7 +30,6 @@ chmod +x ae.sh && ./ae.sh # Copy and paste in terminal
 ```
 <h2 align="left">  This file installs: </h2>
 
-
  - Flatpak
  - Ranger
  - Fzf
@@ -42,14 +41,6 @@ chmod +x ae.sh && ./ae.sh # Copy and paste in terminal
  - Nano
  - Python
  - Git
-<h2 align="left"> Removed: </h2>
-
-
-- Software (Flatpak)
-- Grub Customizer
-- eDEX-UI (It was good but installing process requires a GUI like GNOME
-
-<h3 align="left"> Fun fact: I made this in 'Nano' </h3>
 
 
 # Made by me, [@PSGitHubUser1](https://github.com/PSGitHubUser1)
