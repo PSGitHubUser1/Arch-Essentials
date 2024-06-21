@@ -45,10 +45,10 @@ chmod +x ae.sh &&
  - Fzf
  - Yay (AUR)
  - Dust
- - OS-Prober & Update-Grub
- - Ramfetch
+ - OS-Prober & Update-Grub (AUR)
+ - Ramfetch (AUR too I guess)
  - Nano
- - Python
+ - Python 
  - Java (JDK 17)
  - Curl
  - Wget
