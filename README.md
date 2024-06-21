@@ -11,8 +11,15 @@
 </h2>
 
  - Arch Linux (pacman)
- - Git 
+ - Git
 
+<h2 align="left"> # If you have minimal ArchLinux:</h2>
+
+```sh
+git clone https://github.com/PSGitHubUser1/Arch-Essentials 
+cd Arch-Essentials
+bash ae.sh
+```
  
 <h4 align="left">  Download the 'ae.sh' manually, or copy & paste this command in your terminal: </h4>
 
