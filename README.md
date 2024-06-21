@@ -33,13 +33,18 @@ chmod +x ae.sh &&
  - Flatpak
  - Ranger
  - Fzf
- - Tldr
- - Snap
- - Neofetch
- - Htop
- - Nala (if supported by your distro)
+ - Yay (AUR)
+ - Dust
+ - OS-Prober & Update-Grub
+ - Ramfetch
  - Nano
  - Python
+ - Java (JDK 17)
+ - Curl
+ - Wget
+ - Tldr
+ - Neofetch
+ - Htop
  - Git
 
 
