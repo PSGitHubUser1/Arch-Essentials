@@ -17,15 +17,16 @@
 <h4 align="left">  Download the 'ae.sh' manually, or copy & paste this command in your terminal: </h4>
 
 ```sh
-cd ~/Desktop
-git clone https://github.com/PSGitHubUser1/Arch-Essentials
-cd Arch-Essentials
-rm -f LICENSE
-rm -f README.md
-cp ae.sh ~/Desktop/
-cd ..
-yes | rm -r Arch-Essentials
-chmod +x ae.sh && ./ae.sh || bash ae.sh # Copy and paste in terminal
+cd ~/Desktop &&
+git clone https://github.com/PSGitHubUser1/Arch-Essentials &&
+cd Arch-Essentials &&
+rm -f LICENSE &&
+rm -f README.md &&
+cp ae.sh ~/Desktop/ &&
+cd .. &&
+yes | rm -r Arch-Essentials &&
+chmod +x ae.sh && 
+./ae.sh || bash ae.sh
 ```
 <h2 align="left">  # This file installs: </h2>
 
