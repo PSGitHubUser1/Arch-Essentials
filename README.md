@@ -13,7 +13,7 @@
  - Arch Linux (pacman)
  - Git
 
-<h2 align="left"> # If you have minimal ArchLinux:</h2>
+<h2 align="left"> # If you have minimal Arch:</h2>
 
 ```sh
 git clone https://github.com/PSGitHubUser1/Arch-Essentials 
