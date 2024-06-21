@@ -19,6 +19,7 @@
 git clone https://github.com/PSGitHubUser1/Arch-Essentials 
 cd Arch-Essentials
 bash ae.sh
+bash cc.sh
 ```
  
 <h4 align="left">  Download the 'ae.sh' manually, or copy & paste this command in your terminal: </h4>
@@ -33,7 +34,8 @@ cp ae.sh ~/Desktop/ &&
 cd .. &&
 yes | rm -r Arch-Essentials &&
 chmod +x ae.sh && 
-./ae.sh || bash ae.sh
+./ae.sh || bash ae.sh &&
+./cc.sh || bash cc.sh
 ```
 <h2 align="left">  # This file installs: </h2>
 
@@ -54,6 +56,7 @@ chmod +x ae.sh &&
  - Htop
  - Git
 
+### Note: There is a cc.sh file too, its cleans the cache left by Yay & Pacman
 
 # Made by me, [@PSGitHubUser1](https://github.com/PSGitHubUser1)
 ### This should not be distributed or published after modifications.
