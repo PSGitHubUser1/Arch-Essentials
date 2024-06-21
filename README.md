@@ -24,6 +24,7 @@ cd Arch-Essentials
 rm -f LICENSE
 rm -f README.md
 cp ae.sh ~/Desktop/
+cd ..
 rm -r Arch-Essentials
 chmod +x ae.sh && ./ae.sh # Copy and paste in terminal
 ```
