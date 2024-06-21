@@ -12,11 +12,10 @@
 
  - Arch Linux (pacman)
  - Git 
-<h2 align="left">  # Run the file </h2>
-
 
  
-Download the "ae.sh", copy & paste this command in your terminal:
+<h4 align="left">  Download the 'ae.sh' manually, or copy & paste this command in your terminal: </h4>
+
 ```sh
 cd ~/Desktop
 git clone https://github.com/PSGitHubUser1/Arch-Essentials
