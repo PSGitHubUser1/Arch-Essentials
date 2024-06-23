@@ -117,6 +117,14 @@ echo ==================================================================
 yes | sudo pacman -Sy nano
 echo ==================================================================
 echo 
+echo Installing Important tools 
+echo 
+echo ==================================================================
+yes | sudo pacman -Sy bluez blueman bluez-utils modprobe btusb unzip tar dpkg p7zip unrar exfat-utils fuse-exfat ntfs-3g flac jasper aria2
+
+systemctl enable bluetooth && systemctl start bluetooth
+echo ==================================================================
+echo 
 echo Installing Python 
 echo 
 echo ==================================================================
