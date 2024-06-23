@@ -86,6 +86,8 @@ done
 echo 
 echo 
 
+
+# sudo pacman -Sy firefox dolphin konsole libreoffice-fresh vlc gimp
  
 echo ================================================================================================================================================================
 sudo pacman -Syu || sudo yay -Syu
