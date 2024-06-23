@@ -42,7 +42,7 @@ display_menu() {
     echo 
     echo "5) Install Broadcom wireless drivers (broadcom-wl)"
     echo 
-    echo "6) Exit"
+    echo "6) Exit (Run other commands)"
     echo 
 }
 
