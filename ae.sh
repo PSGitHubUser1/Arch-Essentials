@@ -129,6 +129,7 @@ echo
 echo  Installing Yay [AUR manager]
 echo 
 echo ================================================================================================================================================================
+yes | sudo pacman -S --needed base-devel git
 cd ~
 sudo git clone https://aur.archlinux.org/yay.git
 cd yay
