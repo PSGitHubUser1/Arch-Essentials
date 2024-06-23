@@ -28,7 +28,64 @@
 #echo  "Script will start in (1)....."
 #sleep 1
 
+display_menu() {
+    echo "Please select the driver to install:"
+    echo 
+    echo 
+    echo "1) Install Intel microcode (intel-ucode)"
+    echo 
+    echo "2) Install AMD microcode (amd-ucode)"
+    echo 
+    echo "3) Install NVIDIA drivers (nvidia)"
+    echo 
+    echo "4) Install VirtualBox Guest Additions (virtualbox-guest-utils)"
+    echo 
+    echo "5) Install Broadcom wireless drivers (broadcom-wl)"
+    echo 
+    echo "6) Exit"
+    echo 
+}
 
+# Function to install the selected package
+install_package() {
+    package=$1
+    echo "Installing $package..."
+    sudo pacman -S --noconfirm $package
+}
+
+# Main loop
+while true; do
+    display_menu
+    read -p "Enter your choice [1-6]: " choice
+
+    case $choice in
+        1)
+            install_package "intel-ucode"
+            ;;
+        2)
+            install_package "amd-ucode"
+            ;;
+        3)
+            install_package "nvidia"
+            ;;
+        4)
+            install_package "virtualbox-guest-utils"
+            ;;
+        5)
+            install_package "broadcom-wl"
+            ;;
+        6)
+            echo "Exiting..."
+            break
+            ;;
+        *)
+            echo "Invalid choice. Please select a valid option."
+            ;;
+    esac
+done
+echo 
+echo 
+echo "Script completed."
  
 echo ==================================================================
 sudo pacman -Syu || sudo yay -Syu
@@ -158,6 +215,7 @@ yes | sudo pacman -Sy curl wget
 #make
 #./cpufetch
 echo ==================================================================
+
 #echo 
 #echo Donwloading eDex-UI [x64 Bit, AppImage]
 #echo 
