@@ -177,9 +177,11 @@ echo
 echo Installing Important tools 
 echo 
 echo ================================================================================================================================================================
-yes | sudo pacman -Sy bluez blueman bluez-utils modprobe btusb unzip tar dpkg p7zip unrar exfat-utils fuse-exfat ntfs-3g flac jasper aria2
-
-systemctl enable bluetooth && systemctl start bluetooth
+yes | sudo pacman -Sy bluez blueman bluez-utils modprobe btusb unzip tar dpkg p7zip unrar exfat-utils fuse-exfat ntfs-3g flac jasper aria2 pacman-contrib
+echo 
+sudo systemctl enable bluetooth && systemctl start bluetooth
+sudo systemctl enable paccache.timer
+sudo systemctl start paccache.timer
 echo ================================================================================================================================================================
 echo 
 echo Installing Python 
