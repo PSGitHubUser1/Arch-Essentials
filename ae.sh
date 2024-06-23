@@ -85,7 +85,7 @@ while true; do
 done
 echo 
 echo 
-echo "Script completed."
+
  
 echo ==================================================================
 sudo pacman -Syu || sudo yay -Syu
@@ -229,4 +229,5 @@ echo ==================================================================
 #echo ==================================================================
 echo 
 echo 
+echo "Script completed."
 #reboot
