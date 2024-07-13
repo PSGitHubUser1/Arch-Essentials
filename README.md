@@ -33,8 +33,8 @@ rm -f README.md &&
 cp ae.sh ~/Desktop/ &&
 cp cc.sh ~/Desktop/ &&
 cd .. &&
-yes | rm -r Arch-Essentials &&
-chmod +x ae.sh && 
+yes | rm -rf Arch-Essentials &&
+chmod +x ae.sh && chmod +x cc.sh &&
 ./ae.sh || bash ae.sh &&
 ./cc.sh || bash cc.sh
 ```
