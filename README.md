@@ -21,7 +21,18 @@ cd Arch-Essentials
 bash ae.sh
 bash cc.sh
 ```
- 
+<h4 align="center">OR</h4>
+<h3 align="left">Download this README file:</h2>
+
+```sh
+curl -o README.md https://raw.githubusercontent.com/PSGitHubUser1/Arch-Essentials/ProjectPublic/README.md
+```
+<h4 align="center">OR</h4>
+
+```sh
+wget -O README.md https://raw.githubusercontent.com/PSGitHubUser1/Arch-Essentials/ProjectPublic/README.md
+```
+<h4 align="center">OR</h4>
 <h4 align="left">  Copy & paste this command in your terminal: </h4>
 
 ```sh
