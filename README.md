@@ -22,7 +22,7 @@ bash ae.sh
 bash cc.sh
 ```
 <h4 align="center">OR</h4>
-<h3 align="left">Download this README file:</h2>
+<h3 align="left">Download this README file: (if you already got Curl or Wget)</h2>
 
 ```sh
 curl -o README.md https://raw.githubusercontent.com/PSGitHubUser1/Arch-Essentials/ProjectPublic/README.md
